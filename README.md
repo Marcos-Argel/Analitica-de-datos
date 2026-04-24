@@ -1,4 +1,5 @@
 🎬 Proyecto Analítica de Datos — The Ghost in the Machine
+
 Descripción
 Proyecto de analítica de datos basado en una base de datos relacional de películas. Permite gestionar y analizar información sobre películas, géneros, países, actores, directores, productoras, valoraciones y premios.
 Integrantes
