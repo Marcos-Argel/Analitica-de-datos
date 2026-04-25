@@ -212,4 +212,4 @@ with Conexion() as db:
 |---|---|
 | Jhover Inchapie | — |
 | Marcos Argel | [@Marcos-Argel](https://github.com/Marcos-Argel) |
-| Jhon Usuga | — |
+| Jhon Usuga | [@JOHN007](https://github.com/JOHN007-oss) |
