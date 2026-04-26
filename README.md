@@ -210,6 +210,6 @@ with Conexion() as db:
 
 | Nombre | GitHub |
 |---|---|
-| Jhover Inchapie | — |
+| Jhover Hincapie | [@jhover-hernandez](https://github.com/jhover-hernandez) |
 | Marcos Argel | [@Marcos-Argel](https://github.com/Marcos-Argel) |
 | Jhon Usuga | [@JOHN007](https://github.com/JOHN007-oss) |
