@@ -1,7 +1,7 @@
 # 🎬 THE GHOST IN THE MACHINE
 ### Proyecto de Analítica de Datos — Base de Datos de Películas
 
-> **Integrantes:** Jhover Inchapie · Marcos Argel · Jhon Usuga  
+> **Integrantes:** Marcos Argel · Jhover Hincapie · Jhon Usuga  
 > **Repositorio:** [github.com/Marcos-Argel/Analitica-de-datos](https://github.com/Marcos-Argel/Analitica-de-datos)
 
 ---
