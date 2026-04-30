@@ -5,6 +5,12 @@
 SET FOREIGN_KEY_CHECKS = 0;
 SET NAMES utf8mb4;
 
+
+
+
+
+
+
 -- ------------------------------------------------------------
 -- 1. franquicia
 -- ------------------------------------------------------------
@@ -159755,10 +159761,12 @@ INSERT INTO lista_pelicula (lista_id, pelicula_id, added_at) VALUES
   (600, 8194, NOW()),
   (600, 7415, NOW());
 
+  SET FOREIGN_KEY_CHECKS = 1;
+
 -- ============================================================
 -- SELECT * DE TODAS LAS TABLAS
 -- ============================================================
-SELECT * FROM franquicia;
+/*SELECT * FROM franquicia;
 SELECT * FROM idioma;
 SELECT * FROM productora;
 SELECT * FROM persona;
@@ -159776,4 +159784,43 @@ SELECT * FROM valoracion;
 SELECT * FROM lista;
 SELECT * FROM lista_pelicula;
 
-SET FOREIGN_KEY_CHECKS = 1;
+-- Ver cómo está el campo sucio
+SELECT * FROM pais WHERE nombre LIKE '%,%';
+
+-- Separar en 2 columnas con SUBSTRING_INDEX
+SELECT
+    id,
+    TRIM(SUBSTRING_INDEX(nombre, ',', 1))  AS ciudad,
+    TRIM(SUBSTRING_INDEX(nombre, ',', -1)) AS departamento
+FROM pais
+WHERE nombre LIKE '%,%';
+
+-- Crear la tabla normalizada
+CREATE TABLE pais_normalizado AS
+SELECT
+    id,
+    TRIM(SUBSTRING_INDEX(nombre, ',', 1))  AS ciudad,
+    TRIM(SUBSTRING_INDEX(nombre, ',', -1)) AS departamento,
+    codigo_iso
+FROM pais;
+
+-- Verificar
+SELECT * FROM pais_normalizado;
+
+-- Así estaba antes (mal)
+SELECT nombre FROM genero LIMIT 3;
+-- "Acción Clásico Americano"
+-- "Drama Moderno Europeo"
+
+-- Así quedó normalizado (bien)
+SELECT genero_base, subgenero, region FROM genero_normalizado LIMIT 3;
+-- Acción | Clásico | Americano
+-- Drama  | Moderno | Europeo
+
+
+
+
+*/
+
+
+
