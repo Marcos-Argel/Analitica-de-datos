@@ -18,7 +18,7 @@
 
 | 👤 Integrante | 🎓 Rol |
 |---|---|
-| **Jhover Inchapie Santos Hernandez** | Data Engineer & ETL Dev |
+| **Jhover Hincapie Hernandez** | Data Engineer & ETL Dev |
 | **Marcos Daniel Argel Avila** | Database Architect |
 | **Jhon Kennedy Usuga** | BI & Analytics |
 
